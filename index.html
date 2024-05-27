@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portafolio juan</title>
+    <title>Portafolio Juan.css</title>
 </head>
 <style>
+    @font-face {
+        font-family: 'gilmerregular';
+        /* Nombre que le das a tu fuente */
+        src: url('Gilmer\ Regular.otf') format('opentype');        
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: #0092E7;
+        color: #fff;
+        font-size: 20px;
+    }
+
+
     body::-webkit-scrollbar {
-            display: none; /* WebKit */
-        }
+        display: none;
+        /* WebKit */
+    }
+
     body {
+        font-family: 'gilmerregular';
         margin: 0;
         padding: 0;
     }
+
     .container_img {
         object-fit: cover;
-        
+
     }
-    .container_img img{   
-        display: block;     
-        -webkit-user-drag: none; /* Safari y Chrome */
-        user-select: none; /* Estándar */
+
+    .container_img img {
+        display: block;
+        -webkit-user-drag: none;
+        /* Safari y Chrome */
+        user-select: none;
+        /* Estándar */
         width: 100%;
     }
 </style>
+
 <body>
+    <!-- <nav>
+        <span>tecnologo</span>
+        <span>Hoja de Vida</span>
+        <span>Portafolio</span>
+    </nav> -->
     <div class="container_img">
-        <img src="header.png" alt="juan">
-        <img src="hojaDeVida.png" alt="juan">
+        <img src="header.webp" alt="juan">
+        <img src="introduccion.webp" alt="juan">
+        <img src="hojaDeVida.webp" alt="juan">
+        <img src="contenido.webp" alt="juan">
+        <img src="proyectos.webp" alt="juan">
     </div>
 </body>
+
 </html>
